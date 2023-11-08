@@ -1,0 +1,372 @@
+/* Estilos gerais */
+@import url("https://fonts.googleapis.com/css2?family=Archivo&display=swap");
+
+:root {
+    --cor-destaque: #33BC53;
+    --cor-background: #292D40;
+    --cor-paragrafo: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    background-color: var(--cor-background);
+
+}
+
+
+.header {
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navigation {
+    padding: 0;
+    display: flex;
+    gap: 33px;
+}
+
+.header-home,
+.header-projetos,
+.header-voluntarios {
+    color: var(--cor-paragrafo);
+    font-family: "Archivo", sans-serif;
+}
+
+
+.main-conteiner {
+    color: #FFFFFF;
+    background-color: #292D40;
+}
+
+.header {
+    padding-top: 25px;
+}
+
+.home {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    font-family: "Archivo", sans-serif;
+
+}
+
+.conteudo-principal {
+    padding-left: 125px;
+}
+
+
+
+.logo-img img {
+    width: 31.4375em;
+    height: 41.9375em;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.container-quadrados-header {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    z-index: 1;
+}
+
+.quadrado-1,
+.quadrado-2,
+.quadrado-3,
+.quadrado-4,
+.quadrado-5,
+.quadrado-6 {
+    width: 104px;
+    height: 104px;
+}
+
+.quadrado-1 {
+    background-color: #2F354A;
+}
+
+.quadrado-2 {
+    background-color: #292D40;
+}
+
+.quadrado-5 {
+    background-color: #252A3B;
+}
+
+.quadrado-3 {
+    background-color: #353C54;
+}
+
+.quadrado-4 {
+    background-color: #292D40;
+}
+
+.quadrado-6 {
+    background-color: #232536;
+}
+
+
+.footer-home {
+    display: flex;
+    width: 100%;
+}
+
+.retangulo-esquerda {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 43.125em;
+    height: 14.3125em;
+    background-color: #1B1E2B;
+
+}
+
+.retangulo-esquerda-conteudo {
+    font-family: "Archivo", sans-serif;
+    font-size: 22px;
+    color: var(--cor-paragrafo);
+
+}
+
+.retangulo-direita {
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 43px;
+    width: 100%;
+    height: 14.3125em;
+    background-color: #232536;
+
+}
+
+.titulo-home {
+    padding-top: 97px;
+    font-size: 72px;
+    margin-bottom: 50px;
+}
+
+.subtitulo-home {
+    font-size: 32px;
+    text-align: start;
+}
+
+.conteudo-projeto {
+    margin-top: 59px;
+}
+
+.cabecalho-projetos-home {
+    margin-left: 160px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 30px;
+    color: var(--cor-paragrafo);
+}
+
+
+.titulo-projeto {
+    font-family: 'Archivo', sans-serif;
+    font-size: 72px;
+    color: var(--cor-paragrafo);
+    padding-left: 160px;
+    padding-top: 81px;
+}
+
+.titulo-destaque,
+.conteudo-projetos-destaque {
+    color: var(--cor-destaque)
+}
+
+
+.conteudo-projetos {
+    display: flex;
+    justify-content: flex-start;
+    gap: 239px;
+    margin-left: 160px;
+    margin-top: 120.8px;
+
+}
+
+.coluna-1,
+.coluna-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+
+}
+
+
+.coluna-1-conteudo {
+    font-family: 'Archivo', sans-serif;
+    font-size: 30px;
+    color: var(--cor-paragrafo);
+}
+
+.coluna-2-conteudo {
+    font-family: 'Archivo', sans-serif;
+    font-size: 30px;
+    color: var(--cor-paragrafo);
+}
+
+
+
+.coluna-1-conteudo:hover,
+.coluna-2-conteudo:hover,
+.header-home:hover,
+.header-projetos:hover,
+.header-voluntarios:hover {
+    transform: scale(1.7);
+    animation: translateY 0.8s infinite alternate;
+    color: #33BC53;
+
+}
+
+.cabecalho-projetos-home:hover {
+    color: #33BC53;
+}
+
+@keyframes translateY {
+    from {
+        transform: translateY(0) scale(1);
+    }
+
+    to {
+        transform: translateY(-8px) scale(1.1);
+    }
+}
+
+
+
+
+.cabecalho-voluntarios {
+    padding-top: 59px;
+}
+
+.conteudo-voluntario {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    gap: 100px;
+}
+
+.button-voluntario {
+    background-color: #33BC53;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-voluntario:hover {
+    background-color: #2E9E48;
+}
+
+.button-voluntario:active {
+    background-color: #278B42;
+}
+
+.titulo-voluntario {
+    font-family: 'Archivo', sans-serif;
+    font-size: 32px;
+    color: var(--cor-paragrafo);
+}
+
+.cabecalho-front-end {
+    padding-top: 59px;
+}
+
+.cabecalho-front-end-home {
+    margin-left: 160px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 30px;
+    color: var(--cor-paragrafo);
+}
+
+.header-front-end {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-html {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: end;
+}
+
+.html-titutlo {
+    padding-top: 39px;
+    padding-right: px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 72px;
+    color: var(--cor-paragrafo);
+}
+
+.img-html {
+    margin-right: 34px;
+    width: 147px;
+    height: 141px;
+    align-self: flex-end;
+}
+
+
+.conteudo-front-end-introducao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.subtitulo-front-end {
+    font-family: 'Archivo', sans-serif;
+    font-size: 30px;
+    color: var(--cor-paragrafo);
+    width: 807px;
+    height: 141.27px;
+}
+
+.titulo-front-end {
+    font-family: 'Archivo', sans-serif;
+    font-size: 36px;
+    color: var(--cor-paragrafo);
+    padding-bottom: 86.55px;
+}
+
+.conteudo-subtitulo-front-end {
+    display: flex;
+    flex-direction: column;
+    gap: 51px;
+    padding-bottom: 33px;
+}
+
+
+.conteudo-front-end-conceitos {
+    display: flex;
+    flex-direction: column;
+    padding-left: 160px;
+}
