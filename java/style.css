@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo&display=swap");
+
+:root {
+    --cor-destaque: #33BC53;
+    --cor-background: #292D40;
+    --cor-paragrafo: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-paragrafo);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+body {
+    width: 100%;
+    background-color: var(--cor-background);
+
+}
+
+
+.cabecalho-java {
+    padding-top: 59px;
+}
+
+.cabecalho-java-home {
+    margin-left: 160px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 30px;
+    color: var(--cor-paragrafo);
+}
+
+.header-java {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-java {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 44px;
+    padding-top: 40px;
+}
+
+.conteudo-java-introducao {
+    padding-top: 146px;
+    padding-left: 316px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 26px;
+    color: var(--cor-paragrafo);
+    width: 1600px;
+    padding-bottom: 100px;
+}
+
+@media (max-width: 720px) {
+    .img-css {
+        display: none;
+    }
+}
+
+@media (max-height: 840px) {
+    .img-css {
+        display: none;
+    }
+}
+
+.button-proxima-pagina,
+.button-voltar-pagina {
+    background-color: #33BC53;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-proxima-pagina:hover,
+.button-voltar-pagina:hover {
+    background-color: #2E9E48;
+    animation: translateY 0.8s infinite alternate;
+}
+
+.button-proxima-pagina:active,
+.button-voltar-pagina:active {
+    background-color: #278B42;
+    animation: translateY 0.8s infinite alternate;
+}
+
+.button-front-end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 100px;
+
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 33px;
+    flex-direction: row-reverse;
+}
+
+@keyframes translateY {
+    from {
+        transform: translateY(0) scale(1);
+    }
+
+    to {
+        transform: translateY(-8px) scale(1.1);
+    }
+}
+
+.conteudo-java-configuracao {
+    padding-left: 316px;
+    padding-top: 199px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 30px;
+    color: var(--cor-paragrafo);
+
+}
+
+.conteudo-java-configuracao-titulo {
+    padding-bottom: 95px;
+}
+
+.conteudo-java-configuracao-subtitulo {
+    width: 807px;
+    height: 127px;
+    padding-bottom: 300px;
+}
+
+.conteudo-java-sintaxe {
+    padding-left: 316px;
+    padding-top: 152px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 30px;
+    color: var(--cor-paragrafo);
+}
+
+.conteudo-java-sintaxe-titulo {
+    padding-bottom: 81px;
+}
+
+.conteudo-java-sintaxe-subtitulo1 {
+    padding-bottom: 50px;
+    width: 807px;
+}
+
+.conteudo-java-sintaxe-subtitulo2 {
+    padding-bottom: 50px;
+    padding-left: 144px;
+    color: #d1d1b9;
+}
+
+.conteudo-java-variaveis {
+    padding-left: 316px;
+    padding-top: 149px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 30px;
+    color: var(--cor-paragrafo);
+}
+
+.conteudo-java-variaveis-subtitulo1 {
+    padding-top: 50px;
+    width: 807px;
+    padding-bottom: 70px;
+}
+
+.conteudo-java-variaveis-subtitulo2 {
+    color: #d1d1b9;
+    padding-left: 144px;
+    padding-bottom: 50px;
+}
+
+.conteudo-java-estruturas {
+    padding-left: 316px;
+    padding-top: 149px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 30px;
+    color: var(--cor-paragrafo);
+}
+
+.conteudo-java-estruturas-titulo{
+    padding-bottom: 50px;
+}
+.conteudo-java-estruturas-subtitulo1{
+    padding-bottom: 50px;
+    width: 750px;
+}
+.conteudo-java-estruturas-subtitulo2{
+    padding-left: 144px;
+    padding-top: 40px;
+    color: #d1d1b9;
+}
+
+.conteudo-java-funcoes{
+    padding-left: 316px;
+    padding-top: 149px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 30px;
+    color: var(--cor-paragrafo);
+}
+
+.conteudo-java-funcoes-titulo{
+    padding-bottom: 50px;
+}
+.conteudo-java-funcoes-subtitulo1{
+    padding-bottom: 85px;
+}
+.conteudo-java-funcoes-subtitulo2{
+    padding-bottom: 85px;
+    padding-left: 144px;
+    color: #d1d1b9;
+}
+
+.conteudo-java-colecoes{
+    padding-left: 316px;
+    padding-top: 149px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 30px;
+    color: var(--cor-paragrafo);
+}
+
+.conteudo-java-colecoes-titulo{
+    padding-bottom: 45px;
+}
+
+.conteudo-java-colecoes-subtitulo1{
+    width: 740px;
+    padding-bottom: 84px;
+}
+
+.conteudo-java-colecoes-subtitulo2{
+    padding-left: 144px;
+    color: #d1d1b9;
+    padding-bottom: 50px;
+}
+
+.conteudo-java-orientacao, .conteudo-java-tratamento{
+    padding-top: 135px;
+    padding-left: 316px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 30px;
+    color: var(--cor-paragrafo);
+}
+
+.conteudo-java-orientacao-titulo,  .conteudo-java-tratamento-titulo{
+    padding-bottom: 80px;
+}
+.conteudo-java-orientacao-subtitulo1, .conteudo-java-tratamento-subtitulo1{
+    padding-left: 98px;
+    width: 815px;
+}
+
+
+.conteudo-java-recurso{
+    padding-top: 135px;
+    padding-left: 316px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 30px;
+    color: var(--cor-paragrafo);
+}
+
+.conteudo-java-recurso-titulo{
+    padding-bottom: 34px;
+}
+
+.conteudo-java-recurso-subtitulo1, .conteudo-java-pratica-subtitulo1{
+    padding-left: 102px;
+    width: 940px;
+}
+
+.conteudo-java-pratica{
+    padding-top: 51px;
+    padding-left: 316px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 30px;
+    color: var(--cor-paragrafo);
+}
+
+.conteudo-java-pratica-titulo{
+    padding-bottom: 49px;
+}
+
+.footer-img {
+    position: absolute;
+    bottom: 0;
+}
+
+@media (max-width: 720px) {
+    .footer-img {
+      display: none;
+    }
+}
+
+@media (max-height: 840px) {
+    .footer-img {
+      display: none;
+    }
+}
