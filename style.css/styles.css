@@ -82,11 +82,7 @@ a {
     }
 }
 
-@media (max-height: 730px) {
-    .footer-img, .header_quadrados_home, .logo-img, footer {
-      display: none;
-    }
-}
+
 
 .logo-img img {
     width: 31.4375em;
